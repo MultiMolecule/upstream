@@ -1,0 +1,8 @@
+biopython
+gdown
+kaggle
+numpy
+pyyaml
+safetensors
+torch
+transformers

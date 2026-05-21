@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "dna/grch38_chr21",
+      "kind": "anchor_sequence",
+      "record_id": "grch38_chr21",
+      "molecule": "dna",
+      "length": 46709983,
+      "description": "Human chromosome 21, GRCh38.p14 primary assembly.",
+      "source": "NCBI RefSeq NC_000021.9 GRCh38.p14 Primary Assembly",
+      "source_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "source_query": "efetch db=nuccore id=NC_000021.9 seq_start=<range_start> seq_stop=<range_end> strand=1 rettype=fasta; fetched and cached on demand",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "license": "NCBI RefSeq public sequence data",
+      "fetch": {
+        "type": "ncbi_efetch",
+        "db": "nuccore",
+        "id": "NC_000021.9",
+        "seq_start": 1,
+        "seq_stop": 46709983,
+        "strand": 1,
+        "chunk_size": 1000000
+      },
+      "coordinate": {
+        "assembly": "GRCh38.p14",
+        "accession": "NC_000021.9",
+        "start": 1,
+        "end": 46709983,
+        "strand": "+",
+        "orientation": "reference"
+      },
+      "anchors": {
+        "center": 23354991,
+        "synthetic_variant": 23354991
+      },
+      "recommended_crops": [
+        {
+          "name": "splice5_9bp",
+          "center": "center",
+          "length": 9,
+          "intended_for": [
+            "maxentscan-score5"
+          ]
+        },
+        {
+          "name": "splice3_23bp",
+          "center": "center",
+          "length": 23,
+          "intended_for": [
+            "maxentscan-score3"
+          ]
+        },
+        {
+          "name": "regulatory_145bp",
+          "center": "center",
+          "length": 145,
+          "intended_for": [
+            "mpradragonn"
+          ]
+        },
+        {
+          "name": "hal_160bp",
+          "center": "center",
+          "length": 160,
+          "intended_for": [
+            "hal"
+          ]
+        },
+        {
+          "name": "polyadenylation_205bp",
+          "center": "center",
+          "length": 205,
+          "intended_for": [
+            "aparent",
+            "aparent2"
+          ]
+        },
+        {
+          "name": "regulatory_249bp",
+          "center": "center",
+          "length": 249,
+          "intended_for": [
+            "deepstarr"
+          ]
+        },
+        {
+          "name": "coding_dna_384bp",
+          "start": 23904713,
+          "length": 384,
+          "intended_for": [
+            "calm"
+          ]
+        },
+        {
+          "name": "splice_400bp",
+          "center": "center",
+          "length": 400,
+          "intended_for": [
+            "dnabert",
+            "openspliceai"
+          ]
+        },
+        {
+          "name": "regulatory_500bp",
+          "center": "center",
+          "length": 500,
+          "intended_for": [
+            "deepmel"
+          ]
+        },
+        {
+          "name": "regulatory_600bp",
+          "center": "center",
+          "length": 600,
+          "intended_for": [
+            "a2zchromatin",
+            "basset",
+            "dnabert2",
+            "dnaberts",
+            "malinois"
+          ]
+        },
+        {
+          "name": "regulatory_1000bp",
+          "center": "center",
+          "length": 1000,
+          "intended_for": [
+            "bpnet",
+            "deepsea"
+          ]
+        },
+        {
+          "name": "deepcpgdna_1001bp",
+          "center": "center",
+          "length": 1001,
+          "intended_for": [
+            "deepcpgdna"
+          ]
+        },
+        {
+          "name": "genome_1024bp",
+          "center": "center",
+          "length": 1024,
+          "intended_for": [
+            "hyenadna"
+          ]
+        },
+        {
+          "name": "regulatory_1344bp",
+          "center": "center",
+          "length": 1344,
+          "intended_for": [
+            "scbasset"
+          ]
+        },
+        {
+          "name": "regulatory_2114bp",
+          "center": "center",
+          "length": 2114,
+          "intended_for": [
+            "chrombpnet",
+            "procapnet"
+          ]
+        },
+        {
+          "name": "promoter_10500bp",
+          "center": "center",
+          "length": 10500,
+          "intended_for": [
+            "xpresso"
+          ]
+        },
+        {
+          "name": "coverage_131072bp",
+          "center": "center",
+          "length": 131072,
+          "intended_for": [
+            "basenji"
+          ]
+        },
+        {
+          "name": "coverage_196608bp",
+          "center": "center",
+          "length": 196608,
+          "intended_for": [
+            "enformer"
+          ]
+        },
+        {
+          "name": "coverage_524288bp",
+          "center": "center",
+          "length": 524288,
+          "intended_for": [
+            "borzoi"
+          ]
+        },
+        {
+          "name": "genome_1000000bp",
+          "center": "center",
+          "length": 1000000,
+          "intended_for": [
+            "evo2",
+            "long_context_dna"
+          ]
+        },
+        {
+          "name": "genome_10000000bp",
+          "center": "center",
+          "length": 10000000,
+          "intended_for": [
+            "long_context_dna"
+          ]
+        },
+        {
+          "name": "genome_20000000bp",
+          "center": "center",
+          "length": 20000000,
+          "intended_for": [
+            "long_context_dna"
+          ]
+        },
+        {
+          "name": "genome_32000000bp",
+          "center": "center",
+          "length": 32000000,
+          "intended_for": [
+            "long_context_dna"
+          ]
+        },
+        {
+          "name": "splice_10000bp",
+          "center": "center",
+          "length": 10000,
+          "intended_for": []
+        }
+      ]
+    },
+    {
+      "id": "rna/grch38_chr21_transcribed",
+      "kind": "derived_sequence",
+      "record_id": "grch38_chr21_transcribed",
+      "source_record_id": "dna/grch38_chr21",
+      "transform": "transcribe",
+      "molecule": "rna",
+      "length": 46709983,
+      "description": "Human chromosome 21 sequence transcribed by replacing T with U for RNA-model faithfulness fixtures.",
+      "source": "Derived from dna/grch38_chr21 by T-to-U transcription.",
+      "source_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "license": "NCBI RefSeq public sequence data",
+      "anchors": {
+        "center": 23354991
+      },
+      "recommended_crops": [
+        {
+          "name": "rna_50nt",
+          "center": "center",
+          "length": 50,
+          "intended_for": [
+            "bpfold",
+            "framepool",
+            "optimus5prime",
+            "optmrl",
+            "ribonanzanet",
+            "rinalmo",
+            "rnabert",
+            "rnaernie",
+            "rnafm",
+            "rnamsm",
+            "spotrna",
+            "ufold",
+            "utrlm-te_el"
+          ]
+        },
+        {
+          "name": "rna_265nt",
+          "center": "center",
+          "length": 265,
+          "intended_for": [
+            "ernierna",
+            "rna_language_model",
+            "translation_efficiency"
+          ]
+        },
+        {
+          "name": "splicebert_510nt",
+          "center": "center",
+          "length": 510,
+          "intended_for": [
+            "splicebert"
+          ]
+        },
+        {
+          "name": "rna_512nt",
+          "center": "center",
+          "length": 512,
+          "intended_for": [
+            "rna_language_model",
+            "utrbert"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protein/grch38_chr21_orf",
+      "kind": "derived_sequence",
+      "record_id": "grch38_chr21_orf",
+      "source_record_id": "dna/grch38_chr21",
+      "transform": "translate",
+      "source_start": 23904713,
+      "source_length": 630,
+      "translation_table": 1,
+      "molecule": "protein",
+      "length": 210,
+      "description": "A fixed chr21-derived open reading frame translated with the standard genetic code for protein-model faithfulness fixtures.",
+      "source": "Derived from dna/grch38_chr21 positions 23904713..23905342 (0-based half-open) using standard genetic code table 1.",
+      "source_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "license": "NCBI RefSeq public sequence data",
+      "anchors": {
+        "center": 105
+      },
+      "recommended_crops": [
+        {
+          "name": "protein_128aa",
+          "center": "center",
+          "length": 128,
+          "intended_for": [
+            "amplify",
+            "progen2",
+            "protein_language_model"
+          ]
+        },
+        {
+          "name": "protein_full",
+          "start": 0,
+          "length": 210,
+          "intended_for": [
+            "protein_language_model"
+          ]
+        }
+      ],
+      "sha256": "9146914b2a117f1362f4032dbe84ac0b5427fda7e0a278c4d1d9a17b7e6037fc"
+    },
+    {
+      "id": "dna/grch38_chr21_synthetic_variant",
+      "kind": "variant_pair",
+      "molecule": "dna",
+      "anchor_record_id": "dna/grch38_chr21",
+      "position_in_anchor": 23354991,
+      "ref_allele": "A",
+      "alt_allele": "T",
+      "description": "Synthetic single-nucleotide substitution in chr21 used only for faithfulness fixtures that require paired reference/alternative inputs.",
+      "source": "Synthetic substitution on dna/grch38_chr21.",
+      "source_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9",
+      "license": "NCBI RefSeq public sequence data",
+      "anchors": {
+        "variant": 23354991
+      },
+      "recommended_crops": [
+        {
+          "name": "variant_400bp",
+          "center": "variant",
+          "length": 400,
+          "intended_for": [
+            "mmsplice",
+            "pangolin",
+            "sptransformer"
+          ]
+        },
+        {
+          "name": "variant_800bp",
+          "center": "variant",
+          "length": 800,
+          "intended_for": [
+            "mtsplice"
+          ]
+        },
+        {
+          "name": "variant_196608bp",
+          "center": "variant",
+          "length": 196608,
+          "intended_for": []
+        }
+      ]
+    }
+  ]
+}
