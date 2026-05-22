@@ -1,0 +1,22 @@
+model: hyenadna
+upstream:
+  repository: https://github.com/HazyResearch/hyena-dna
+  commit: d553021b483b82980aa4b868b37ec2d4332e198a
+checkpoints:
+  hyenadna-tiny:
+    source: huggingface://LongSafari/hyenadna-tiny-16k-seqlen-d128-hf@d79fa37e2cd62dd338103c630f95be8f90812d46/model.safetensors
+    sha256: 9b30dba3d2d801c305d96cc4ac6229f1d6ce61567871e0b58754633ad764bca8
+  hyenadna-small:
+    source: huggingface://LongSafari/hyenadna-tiny-1k-seqlen-d256-hf@6036d4e144922b44470294f510cbfd2539ba3b7e/model.safetensors
+    sha256: 81c15c4042d5fae646f00b429b76c65644cdbe88aa7e98b61aa781c84ff09031
+  hyenadna-medium:
+    source: huggingface://LongSafari/hyenadna-small-32k-seqlen-hf@8fe770c78eb13fe33bf81501612faeddf4d6f331/model.safetensors
+    sha256: b7a1c9479248edf27691b189bb6657256f1705e560cadc64d6431633932cafa1
+  hyenadna-large:
+    source: huggingface://LongSafari/hyenadna-large-1m-seqlen-hf@0a629abf9c7f85b4ec9aa6a1aefa3adcf1907446/model.safetensors
+    sha256: deafb53209bfafb314d14bd81108546a34d473c07ed7ab7a355674376b56ad12
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

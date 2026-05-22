@@ -1,0 +1,15 @@
+model: rnabert
+upstream:
+  repository: https://github.com/mana438/RNABERT
+  commit: 1aeebcb2823bc34fc37f6527d63fca06917e3919
+checkpoints:
+  rnabert:
+    source: google_drive://1sT6jlv9vrpX0npKmnbFeOqZ1JZDrZTQ2/RNABERT_pretrained.pth
+    sha256: c0038a6672191bcb5517f49be94db4692769e6bddcf1dc971a03688c64105d51
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

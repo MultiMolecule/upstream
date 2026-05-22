@@ -1,0 +1,41 @@
+{
+  "auto_model": "AutoModelForTokenPrediction",
+  "case": "basenji",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 131072,
+      "name": "coverage_131072bp",
+      "pad": "N",
+      "requested_end": 23420527,
+      "requested_start": 23289455,
+      "right_pad": 0,
+      "source_end": 23420527,
+      "source_start": 23289455
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "80b4f3a690dbd070c5aa4de59bb25f950b914812679ccd791d4e7a4bc289427d",
+    "type": "corpus_crop"
+  },
+  "model": "basenji",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "3f74da002918d3e695bbf9e6f8a685e860196679372ba0964bd1faa26a82eed1",
+    "checkpoint_source": "https://storage.googleapis.com/basenji_barnyard2/model_human.h5",
+    "commit": "06ce5d387e20b47184d05433b3983163c5f923cd",
+    "repository": "https://github.com/calico/basenji",
+    "target_slice": [
+      0
+    ]
+  },
+  "version": 1
+}

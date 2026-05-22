@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModel",
+  "case": "hal",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 160,
+      "name": "hal_160bp",
+      "pad": "N",
+      "requested_end": 23355071,
+      "requested_start": 23354911,
+      "right_pad": 0,
+      "source_end": 23355071,
+      "source_start": 23354911
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "365d4988c0487a26ec7fe66c7e768381bbd1b99e02b6d6e21ca0cb515e2a23a9",
+    "type": "corpus_crop"
+  },
+  "model": "hal",
+  "outputs": [
+    "pooler_output"
+  ],
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "upstream": {
+    "checkpoint_sha256": "961acd13238e19168b691d714d2f70c385fc87443cb493a9a9f54927a0e7e6af",
+    "checkpoint_source": "https://zenodo.org/record/1466088/files/HAL_mer_scores.npz?download=1",
+    "commit": "ca54d1117fd28375260bfde3d1b46f3d6074f306",
+    "repository": "https://github.com/Alex-Rosenberg/cell-2015"
+  },
+  "version": 1
+}

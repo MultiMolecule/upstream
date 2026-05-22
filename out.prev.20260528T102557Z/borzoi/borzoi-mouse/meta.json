@@ -1,0 +1,41 @@
+{
+  "auto_model": "AutoModelForTokenPrediction",
+  "case": "borzoi-mouse",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 524288,
+      "name": "coverage_524288bp",
+      "pad": "N",
+      "requested_end": 23617135,
+      "requested_start": 23092847,
+      "right_pad": 0,
+      "source_end": 23617135,
+      "source_start": 23092847
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "f5f75725ba0b1665a6e5a6046ddbbbb606b37a76ceeeed645dd9fcce15f1064d",
+    "type": "corpus_crop"
+  },
+  "model": "borzoi",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "14b1d2e2f94898dd4d83b7e228f302707d524e3a1feb2b986341b196bd0fd127",
+    "checkpoint_source": "https://storage.googleapis.com/seqnn-share/borzoi/f0/model1_best.h5",
+    "commit": "9736924e6c861f0d71978cc3012ff8d76d6fa91f",
+    "repository": "https://github.com/calico/borzoi",
+    "target_slice": [
+      0
+    ]
+  },
+  "version": 1
+}

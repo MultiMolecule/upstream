@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForRnaSecondaryStructurePrediction",
+  "case": "ernierna-ss",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 265,
+      "name": "rna_265nt",
+      "pad": "N",
+      "requested_end": 23355124,
+      "requested_start": 23354859,
+      "right_pad": 0,
+      "source_end": 23355124,
+      "source_start": 23354859
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "54b63096d35eac19eae464b254fd9a2cbe126af2aff1a804dcc788798dddb905",
+    "type": "corpus_crop"
+  },
+  "model": "ernierna",
+  "outputs": [
+    "logits_ss"
+  ],
+  "tolerance": {
+    "atol": 0.002,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "c528cd8b4299fcb0a502093c617946596fb6e12b9db9090c5053e99c2e640653",
+    "checkpoint_source": "google_drive://1tvoHc66uQ796mqlbKgJrl-MiRPQGylR5/ERNIE-RNA_attn-map_ss_prediction_bpRNA-1m_checkpoint.pt",
+    "commit": "43bc06de1088ed03ffd7de918ad4b2c2a3346a43",
+    "repository": "https://github.com/Bruce-ywj/ERNIE-RNA"
+  },
+  "version": 1
+}

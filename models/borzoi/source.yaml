@@ -1,0 +1,18 @@
+model: borzoi
+upstream:
+  repository: https://github.com/calico/borzoi
+  commit: 9736924e6c861f0d71978cc3012ff8d76d6fa91f
+checkpoints:
+  borzoi-human:
+    source: https://storage.googleapis.com/seqnn-share/borzoi/f0/model0_best.h5
+    sha256: 7661c8d8541ae39293b1bf25392a4ec7b97b76114be5ddf82764644c3094eb9f
+  borzoi-mouse:
+    source: https://storage.googleapis.com/seqnn-share/borzoi/f0/model1_best.h5
+    sha256: 14b1d2e2f94898dd4d83b7e228f302707d524e3a1feb2b986341b196bd0fd127
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

@@ -1,0 +1,45 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "mmsplice",
+  "inputs_source": {
+    "alt_sha256": "d78ff5eb18f957dc6daaf277f4cf6b6d64eca58607271a604533f5fb7311fe7b",
+    "anchor_record_id": "dna/grch38_chr21",
+    "crop": {
+      "center": "variant",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 400,
+      "name": "variant_400bp",
+      "pad": "N",
+      "requested_end": 23355191,
+      "requested_start": 23354791,
+      "right_pad": 0,
+      "source_end": 23355191,
+      "source_start": 23354791
+    },
+    "id": "dna/grch38_chr21_synthetic_variant",
+    "ref_sha256": "82a955089a177bed0c49c6fc6c2173b5cc95e3d8ccbcfe37ecd3c879a6563d4f",
+    "type": "corpus_variant_pair",
+    "variant": {
+      "alternative": "T",
+      "index": 200,
+      "position_in_anchor": 23354991,
+      "reference": "A"
+    }
+  },
+  "model": "mmsplice",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "upstream": {
+    "checkpoint_sha256": "0199327579b0104ed6b309cda07cfd20d243d870932db0fd4f54fef867e0d4b6",
+    "checkpoint_source": "upstream-file://mmsplice/models/{Intron3,Acceptor,Exon,Donor,Intron5}.h5",
+    "commit": "31513da3846b187b3d7f96ad14f3c71e1177b0d3",
+    "repository": "https://github.com/gagneurlab/MMSplice_MTSplice"
+  },
+  "version": 1
+}

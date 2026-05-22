@@ -1,0 +1,15 @@
+model: bpnet
+upstream:
+  repository: https://github.com/kundajelab/bpnet
+  commit: 0cb7277b736260f8b4084c9b0c5bd62b9edb5266
+checkpoints:
+  bpnet:
+    source: https://zenodo.org/records/4294904/files/bpnet.model.h5
+    sha256: e773929293fa90b6c54b5d738a3ff028382f045dd8e57c51762371f66b8b8b90
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - bpnet

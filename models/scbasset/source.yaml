@@ -1,0 +1,15 @@
+model: scbasset
+upstream:
+  repository: https://github.com/calico/scBasset
+  commit: aed3a6f713091fd988196b297e9c06e092ff1d22
+checkpoints:
+  scbasset:
+    source: https://storage.googleapis.com/scbasset_tutorial_data/buen_model_sc.h5
+    sha256: 1481133d217cea8b764464817775045f79bbb9d980c671465d51fbd3007d675b
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - scbasset

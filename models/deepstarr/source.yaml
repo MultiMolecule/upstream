@@ -1,0 +1,15 @@
+model: deepstarr
+upstream:
+  repository: https://github.com/bernardo-de-almeida/DeepSTARR
+  commit: b02e460c7581934bb6c8910e53be04da10688781
+checkpoints:
+  deepstarr:
+    source: https://zenodo.org/records/5502060/files/DeepSTARR.model.h5?download=1
+    sha256: b1077afeb01570b4e5b79936d1f5ad6725a3499919957492d6ef0ecf8b188b46
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - deepstarr

@@ -1,0 +1,62 @@
+{
+  "auto_model": "AutoModelForPreTraining",
+  "case": "rinalmo-mega",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "rinalmo",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "8e6d5799055dc96a556ac5dc4fbf882b677c86ccfeb072d42578d655890000b0",
+    "checkpoint_source": "https://zenodo.org/records/15043668/files/rinalmo_mega_pretrained.pt",
+    "commit": "63c28a893e9c0347ec0539001ec6b1abe27d3446",
+    "repository": "https://github.com/lbcb-sci/RiNALMo",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      26
+    ]
+  },
+  "version": 1
+}

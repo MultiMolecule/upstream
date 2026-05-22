@@ -1,0 +1,45 @@
+{
+  "auto_model": "AutoModel",
+  "case": "mtsplice",
+  "inputs_source": {
+    "alt_sha256": "020f415abbe24624f1319a5804e98208897afa7fa2e66c3214d86d65f6d78282",
+    "anchor_record_id": "dna/grch38_chr21",
+    "crop": {
+      "center": "variant",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 800,
+      "name": "variant_800bp",
+      "pad": "N",
+      "requested_end": 23355391,
+      "requested_start": 23354591,
+      "right_pad": 0,
+      "source_end": 23355391,
+      "source_start": 23354591
+    },
+    "id": "dna/grch38_chr21_synthetic_variant",
+    "ref_sha256": "b079525332dbd38a9602504a5961f8780fad62a8c0908c5a7c7439258e70db6e",
+    "type": "corpus_variant_pair",
+    "variant": {
+      "alternative": "T",
+      "index": 400,
+      "position_in_anchor": 23354991,
+      "reference": "A"
+    }
+  },
+  "model": "mtsplice",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "upstream": {
+    "checkpoint_sha256": "7f664348225cc2eaecd9b87bfc6b4903898c02a6a3a3f91cb1a4c7054db5bcdb",
+    "checkpoint_source": "upstream-file://mmsplice/models/mtsplice_deep0.h5",
+    "commit": "31513da3846b187b3d7f96ad14f3c71e1177b0d3",
+    "repository": "https://github.com/gagneurlab/MMSplice_MTSplice"
+  },
+  "version": 1
+}

@@ -1,0 +1,13 @@
+model: sptransformer
+upstream:
+  repository: https://github.com/ShenLab-Genomics/SpliceTransformer
+  commit: b67a51dabf27e2980331cec197e4396513c0b34c
+checkpoints:
+  sptransformer:
+    source: google_drive://1d8n4vHDSbXqpPc_JFEswLomSUDBgHvno/SpTransformer_pytorch.ckpt
+    sha256: bf9937c234139f850a770f84a26c65213a80d696d82426949a432ed1ccb9aa4e
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

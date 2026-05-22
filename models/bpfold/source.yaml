@@ -1,0 +1,15 @@
+model: bpfold
+upstream:
+  repository: https://github.com/heqin-zhu/BPfold
+  commit: 545af8042835a0fa751d8b69cbb1b3d3d2d51579
+checkpoints:
+  bpfold:
+    source: https://github.com/heqin-zhu/BPfold/releases/download/v0.2/model_predict.tar.gz
+    sha256: 51af350254b2bd3f4568b9fcaa9861b28f59568155088eae7a40902c6877d0bb
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

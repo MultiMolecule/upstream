@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModel",
+  "case": "maxentscan-score3",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 23,
+      "name": "splice3_23bp",
+      "pad": "N",
+      "requested_end": 23355003,
+      "requested_start": 23354980,
+      "right_pad": 0,
+      "source_end": 23355003,
+      "source_start": 23354980
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "63a30a18016de6db3ea67e61999aab0f51f9768f0ce4123e07fc3d95a084d97c",
+    "type": "corpus_crop"
+  },
+  "model": "maxentscan",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "upstream": {
+    "checkpoint_sha256": "9e8a74dc795ae5c9c5b611d4343a1a5a70fff863956f4e00ae23a85f21beb3ae",
+    "checkpoint_source": "upstream-file://maxentpy/data/score3_matrix.txt",
+    "commit": "60b4fed4a169cc25264d83a7d50db6ba304c2104",
+    "repository": "https://github.com/kepbod/maxentpy"
+  },
+  "version": 1
+}

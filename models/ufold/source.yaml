@@ -1,0 +1,15 @@
+model: ufold
+upstream:
+  repository: https://github.com/uci-cbcl/UFold
+  commit: 75bd9acc83826059682dfca9d3659df66b132cd1
+checkpoints:
+  ufold:
+    source: google_drive://1Sq7MVgFOshGPlumRE_hpNXadvhJKaryi/ufold_train.pt
+    sha256: 532adba4a3d7ae95cc7550e812af7c7e0113b688455530b1d212c59ca579625e
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

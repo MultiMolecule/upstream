@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForRnaSecondaryStructurePrediction",
+  "case": "bpfold",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "bpfold",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "51af350254b2bd3f4568b9fcaa9861b28f59568155088eae7a40902c6877d0bb",
+    "checkpoint_source": "https://github.com/heqin-zhu/BPfold/releases/download/v0.2/model_predict.tar.gz",
+    "commit": "545af8042835a0fa751d8b69cbb1b3d3d2d51579",
+    "repository": "https://github.com/heqin-zhu/BPfold"
+  },
+  "version": 1
+}

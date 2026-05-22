@@ -1,0 +1,15 @@
+model: rnaernie
+upstream:
+  repository: https://github.com/CatIIIIIIII/RNAErnie
+  commit: b5e4c1cfdc6f53101111823abaddcab00c43b0d3
+checkpoints:
+  rnaernie:
+    source: google_drive://1Ls5k7hv83BLRTznB4XcegIa2yKkU40Ls/BERT,ERNIE,MOTIF,PROMPT/model_state.pdparams
+    sha256: e5f17a98af4f1051cabc929b4b1e7d20a8bc8f989b296ef1b515e19b19a3867b
+docker:
+  image: ghcr.io/multimolecule/paddle
+  dockerfile: ../../docker/paddle.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

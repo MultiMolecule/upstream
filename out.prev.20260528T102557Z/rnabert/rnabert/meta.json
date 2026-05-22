@@ -1,0 +1,49 @@
+{
+  "auto_model": "AutoModelForPreTraining",
+  "case": "rnabert",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "rnabert",
+  "outputs": [
+    "hidden_states",
+    "logits_lm",
+    "logits_sa",
+    "logits_ss"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "c0038a6672191bcb5517f49be94db4692769e6bddcf1dc971a03688c64105d51",
+    "checkpoint_source": "google_drive://1sT6jlv9vrpX0npKmnbFeOqZ1JZDrZTQ2/RNABERT_pretrained.pth",
+    "commit": "1aeebcb2823bc34fc37f6527d63fca06917e3919",
+    "repository": "https://github.com/mana438/RNABERT",
+    "target_slice": [
+      0,
+      4,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "version": 1
+}

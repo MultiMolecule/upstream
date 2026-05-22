@@ -1,0 +1,18 @@
+model: a2zchromatin
+upstream:
+  repository: https://github.com/twrightsman/a2z-regulatory
+  commit: 4360ccbba700737dfe4123723d71fd21466a2c02
+checkpoints:
+  a2zchromatin-accessibility:
+    source: https://zenodo.org/records/5724562/files/model-accessibility-full.h5?download=1
+    sha256: 93f650a1d94fc1430d2133559fa11d0fd1cc5fdecbeecc99f8b19e2e4d577ba0
+  a2zchromatin-methylation:
+    source: https://zenodo.org/records/5724562/files/model-methylation-full.h5?download=1
+    sha256: 1f193c08a2ae7a67e026af4a81c388a6b8a7a1570cd4149be4282b3426c3a353
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

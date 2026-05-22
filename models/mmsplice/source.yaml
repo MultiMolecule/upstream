@@ -1,0 +1,13 @@
+model: mmsplice
+upstream:
+  repository: https://github.com/gagneurlab/MMSplice_MTSplice
+  commit: 31513da3846b187b3d7f96ad14f3c71e1177b0d3
+checkpoints:
+  mmsplice:
+    source: upstream-file://mmsplice/models/{Intron3,Acceptor,Exon,Donor,Intron5}.h5
+    sha256: 0199327579b0104ed6b309cda07cfd20d243d870932db0fd4f54fef867e0d4b6
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py

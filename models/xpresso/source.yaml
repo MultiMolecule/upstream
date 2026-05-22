@@ -1,0 +1,15 @@
+model: xpresso
+upstream:
+  repository: https://github.com/vagarwal87/Xpresso
+  commit: b5d1da2b7f7e9376e8b6eca2b6cc73cd361734a3
+checkpoints:
+  xpresso:
+    source: https://raw.githubusercontent.com/vagarwal87/Xpresso/b5d1da2b7f7e9376e8b6eca2b6cc73cd361734a3/Fig5_S5/human_trainepoch.11-0.426.h5
+    sha256: 15a383648008df5f843ec8651e78be5faf82609c88fb068da890aa7a89387bb0
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - xpresso

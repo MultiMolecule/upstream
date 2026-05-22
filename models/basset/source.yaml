@@ -1,0 +1,15 @@
+model: basset
+upstream:
+  repository: https://github.com/davek44/Basset
+  commit: 71cd8016b28b33e40357cac59ba5fbade3692ac2
+checkpoints:
+  basset:
+    source: https://www.dropbox.com/s/rguytuztemctkf8/pretrained_model.th.gz?dl=1
+    sha256: d228f99c8ca286f7f7684534fc66f8ad8c8099afa7380d35c15e88da341f1b94
+docker:
+  image: ghcr.io/multimolecule/torch7
+  dockerfile: ../../docker/torch7.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - basset

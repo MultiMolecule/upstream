@@ -1,0 +1,15 @@
+model: proteinbert
+upstream:
+  repository: https://github.com/nadavbra/protein_bert
+  commit: 69a1122bd7b590af7506981fb31db06e238a882c
+checkpoints:
+  proteinbert:
+    source: https://zenodo.org/records/10371965/files/full_go_epoch_92400_sample_23500000.pkl?download=1
+    sha256: cffb53e237e49fa91f19a4c8bc0898dcfd75fd12eab7833d6e95b36c02ebacbf
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - proteinbert

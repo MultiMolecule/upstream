@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "aparent",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 205,
+      "name": "polyadenylation_205bp",
+      "pad": "N",
+      "requested_end": 23355094,
+      "requested_start": 23354889,
+      "right_pad": 0,
+      "source_end": 23355094,
+      "source_start": 23354889
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "a9eee74a7ba814f602c7a3278dbd06ee9c020d395086bf4b6a0ded0d848481ba",
+    "type": "corpus_crop"
+  },
+  "model": "aparent",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "1bb687d390daf04b7edfe825baa4b9293fec4ed2d3fa0bd0603ba6f8df04af0e",
+    "checkpoint_source": "https://raw.githubusercontent.com/johli/aparent/69ad29791709b48689ff5d9e3a3daefc568de9ce/saved_models/aparent_large_lessdropout_all_libs_no_sampleweights.h5",
+    "commit": "69ad29791709b48689ff5d9e3a3daefc568de9ce",
+    "repository": "https://github.com/johli/aparent"
+  },
+  "version": 1
+}

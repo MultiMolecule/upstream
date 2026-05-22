@@ -1,0 +1,49 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "utrlm-te-el",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "utrlm",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "8b33611dfeee12c13d537f9b9aeab2fcf092b88093a82606499894b3ddf0808f",
+    "checkpoint_source": "upstream-file://Model/Pretrained/ESM2SI_3.1_fiveSpeciesCao_6layers_16heads_128embedsize_4096batchToks_MLMLossMin.pkl",
+    "commit": "b77b589bf182eb9de6a1a5024fa09d44294d94fc",
+    "repository": "https://github.com/a96123155/UTR-LM",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "version": 1
+}

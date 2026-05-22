@@ -1,0 +1,16 @@
+model: amplify
+upstream:
+  repository: https://github.com/chandar-lab/AMPLIFY
+  commit: 7fb657a6bd411e0d51517ccde7cc35391c072b65
+checkpoints:
+  amplify-120m:
+    source: huggingface://chandar-lab/AMPLIFY_120M@d918a9e8c64dc43f6ec4996022c3deba14d66470/model.safetensors
+    sha256: a2375f1f54cbe00bdbe27eedcd039c92d12f165720c0349bc582a6eb42c099ce
+  amplify-350m:
+    source: huggingface://chandar-lab/AMPLIFY_350M@223e35e4e2074fadfdc1617f3451b14fa5ace1c8/model.safetensors
+    sha256: 9df2a8e1c6c220914b2e231008d5372235192c98e47f28abc4bf17e0ea97b5ed
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

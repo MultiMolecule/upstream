@@ -1,0 +1,40 @@
+{
+  "auto_model": "AutoModelForRnaSecondaryStructurePrediction",
+  "case": "ribonanzanet-ss",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "ribonanzanet",
+  "outputs": [
+    "logits_2a3",
+    "logits_dms",
+    "logits_ss"
+  ],
+  "tolerance": {
+    "atol": 0.001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "626060952368affbf61b78b532d6166387094754b68bc0553da376f2d2b00d56",
+    "checkpoint_source": "kaggle://datasets/shujun717/ribonanzanet-weights/RibonanzaNet-SS.pt",
+    "commit": "dbf0fd5862e15e4d4f1bd72a082b2d94cfb2d706",
+    "repository": "https://github.com/Shujun-He/RibonanzaNet"
+  },
+  "version": 1
+}

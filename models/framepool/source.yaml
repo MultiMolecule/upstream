@@ -1,0 +1,13 @@
+model: framepool
+upstream:
+  repository: https://github.com/Karollus/5UTR
+  commit: c575f9cdca0cac1ffa88eb18e4435fdfbc674b08
+checkpoints:
+  framepool:
+    source: https://zenodo.org/record/3584238/files/Framepool_combined_residual.h5
+    sha256: f009163ecb33e64f7a40db4f8da474317a1481003fdbacda95205736d956ad3b
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py

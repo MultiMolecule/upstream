@@ -1,0 +1,16 @@
+model: deltasplice
+upstream:
+  repository: https://github.com/chaolinzhanglab/DeltaSplice
+  commit: 71c2fd1629894956eaca08a8ead25aeb870ed2e2
+checkpoints:
+  deltasplice:
+    source: upstream-file://deltasplice/pretrained_models/DeltaSplice_models/model.ckpt-{0,1,2,3,4}
+    sha256: cd08712d3b9729edd3876ca28f1f192b6f5024f63fb06dc30e30d3e92bfc9fbc
+  deltasplice-human:
+    source: upstream-file://deltasplice/pretrained_models/DeltaSplice_human/model.ckpt-{0,1,2,3,4}
+    sha256: c4d5545c9b800b26f9c41be34a0ad8439a4638b6cee8b53610998d4baf2890bd
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

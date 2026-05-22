@@ -1,0 +1,54 @@
+{
+  "auto_model": "AutoModelForCausalLM",
+  "case": "progen2-large",
+  "inputs_source": {
+    "id": "progen2/standard_protein_probe",
+    "type": "synthetic_token_probe"
+  },
+  "model": "progen2",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "ab03cb15d6ba4a02baea20648f2406f6d2aa186f68bec1b811be1222aca7a4cd",
+    "checkpoint_source": "https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-large.tar.gz",
+    "commit": "485b2ea3db98f8d65d0cd86c2c85ae639b37a678",
+    "repository": "https://github.com/salesforce/progen",
+    "target_slice": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31
+    ]
+  },
+  "version": 1
+}

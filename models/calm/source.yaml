@@ -1,0 +1,15 @@
+model: calm
+upstream:
+  repository: https://github.com/oxpig/CaLM
+  commit: 24187ea44744ca548b747ad262058f3463589f8e
+checkpoints:
+  calm:
+    source: http://opig.stats.ox.ac.uk/data/downloads/calm_weights.pkl
+    sha256: bf536f8f19a5d3c6ebbdd53357a5e49bb0b8cc6ff7173f25ed178696e084ab11
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - calm

@@ -1,0 +1,15 @@
+model: basenji
+upstream:
+  repository: https://github.com/calico/basenji
+  commit: 06ce5d387e20b47184d05433b3983163c5f923cd
+checkpoints:
+  basenji:
+    source: https://storage.googleapis.com/basenji_barnyard2/model_human.h5
+    sha256: 3f74da002918d3e695bbf9e6f8a685e860196679372ba0964bd1faa26a82eed1
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - basenji

@@ -1,0 +1,13 @@
+model: optimus5prime
+upstream:
+  repository: https://github.com/pjsample/human_5utr_modeling
+  commit: d53df410c7fb3fcd4bc4541bd7e8c6dc52b66fbe
+checkpoints:
+  optimus5prime:
+    source: https://raw.githubusercontent.com/pjsample/human_5utr_modeling/d53df410c7fb3fcd4bc4541bd7e8c6dc52b66fbe/modeling/saved_models/main_MRL_model.hdf5
+    sha256: 94b4d0badc08fb9456134492d0ceb258aa9802fefd27d334254a264b3594edf5
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py

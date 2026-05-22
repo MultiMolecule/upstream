@@ -1,0 +1,64 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "ernierna",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 265,
+      "name": "rna_265nt",
+      "pad": "N",
+      "requested_end": 23355124,
+      "requested_start": 23354859,
+      "right_pad": 0,
+      "source_end": 23355124,
+      "source_start": 23354859
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "54b63096d35eac19eae464b254fd9a2cbe126af2aff1a804dcc788798dddb905",
+    "type": "corpus_crop"
+  },
+  "model": "ernierna",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "50ac42d4a2af361b8a7d9fb62546e3f380c32893b179554609440339a6676851",
+    "checkpoint_source": "google_drive://1CmNxJxgjDhRoBdlDODFFjDNNzJMHVzmO",
+    "commit": "43bc06de1088ed03ffd7de918ad4b2c2a3346a43",
+    "repository": "https://github.com/Bruce-ywj/ERNIE-RNA",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "version": 1
+}

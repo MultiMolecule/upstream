@@ -1,0 +1,15 @@
+model: malinois
+upstream:
+  repository: https://github.com/sjgosai/boda2
+  commit: d74deca7a754f98f5dfefc1fd3f4506fed764947
+checkpoints:
+  malinois:
+    source: https://storage.googleapis.com/tewhey-public-data/CODA_resources/malinois_artifacts__20211113_021200__287348.tar.gz
+    sha256: 06e926e42304b8207138f1fb871ec19e0654dcdb6b26a62ed23fe1e9ac8cc592
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - malinois

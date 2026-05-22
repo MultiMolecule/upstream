@@ -1,0 +1,45 @@
+{
+  "auto_model": "AutoModelForTokenPrediction",
+  "case": "enformer",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 196608,
+      "name": "coverage_196608bp",
+      "pad": "N",
+      "requested_end": 23453295,
+      "requested_start": 23256687,
+      "right_pad": 0,
+      "source_end": 23453295,
+      "source_start": 23256687
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "60190d352bd37d0ec91ca71ac0269aeac946fb41891fa25cfc7ef38a80e925b1",
+    "type": "corpus_crop"
+  },
+  "model": "enformer",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": {
+      "saved_model.pb": "c8f0af88f3626e7823f2b8fb2b8b7b07d6f337ae0aadc5f70c5671d263c695d6",
+      "variables.data-00000-of-00001": "6a64f5fdb08b79efc5f18a1d18a804486390d5649046c8b63ac7bb6794cfc461",
+      "variables.index": "7a30693fac902bd23140e962368a80577ed4a05e62c7602b25a820be32d53f91"
+    },
+    "checkpoint_source": "https://tfhub.dev/deepmind/enformer/1",
+    "commit": "f5de0ede8430809180254ee957abf36ed62579ef",
+    "repository": "https://github.com/google-deepmind/deepmind-research",
+    "target_slice": [
+      0
+    ]
+  },
+  "version": 1
+}

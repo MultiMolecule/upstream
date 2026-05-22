@@ -1,0 +1,15 @@
+model: aparent2
+upstream:
+  repository: https://github.com/johli/aparent-resnet
+  commit: a745736a4d9fbe411d1869200f2596a02f875532
+checkpoints:
+  aparent2:
+    source: https://raw.githubusercontent.com/johli/aparent-resnet/a745736a4d9fbe411d1869200f2596a02f875532/saved_models/aparent_all_libs_resnet_no_clinvar_wt_ep_5_var_batch_size_inference_mode.h5
+    sha256: 0435e4a3388941cf5e1e80ee99855f55d98ff0f8a7d071f289eb26750401ccf3
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - aparent2

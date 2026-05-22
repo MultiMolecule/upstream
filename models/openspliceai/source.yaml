@@ -1,0 +1,70 @@
+model: openspliceai
+upstream:
+  repository: https://github.com/Kuanhao-Chao/OpenSpliceAI
+  commit: 8f70d22bee10326630c397d2c7a9ff61f166f9cf
+checkpoints:
+  openspliceai-mane-80nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mane/80nt/model_80nt_rs10.pt
+    sha256: 894594d18be6d3e339d76b9698accf4071bd2f0f32f40c52a2c1b848d1cef9f4
+  openspliceai-mane-400nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mane/400nt/model_400nt_rs10.pt
+    sha256: a4838147b4af2e9b19d336f21eeea6bf5af5140ecd33fa3ebdb64b544ea6b547
+  openspliceai-mane-2000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mane/2000nt/model_2000nt_rs10.pt
+    sha256: dc5bf14fa830f0105dfd34e034ead9d8067d65facc34ee88c7948c8585c921d3
+  openspliceai-mane-10000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mane/10000nt/model_10000nt_rs10.pt
+    sha256: 7b0d6af6239e27392226bbada310ee9e2ce0ced149fb6fdff8996c12cba3cc85
+  openspliceai-mouse-80nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mouse/80nt/model_80nt_rs10.pt
+    sha256: c9d54f8195e0928f141c86a4176875d2ac40049b19f5f278c3ac780f6a378b18
+  openspliceai-mouse-400nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mouse/400nt/model_400nt_rs10.pt
+    sha256: 02caa3469a58a32a04c55ac1e0d2345aa277cc069b833a7c2617ca426460bf52
+  openspliceai-mouse-2000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mouse/2000nt/model_2000nt_rs10.pt
+    sha256: 9c0c8c74f994f7524ea6c1f3af5a708ee4a3b910b2ee53cac11c37d20ff58ff3
+  openspliceai-mouse-10000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-mouse/10000nt/model_10000nt_rs10.pt
+    sha256: 5498a8ff740b630d380a4d22f5180facf68f8d71c1bdfd438cfe70223ace1ff0
+  openspliceai-zebrafish-80nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-zebrafish/80nt/model_80nt_rs10.pt
+    sha256: 8b0db3fb55a5bc9d2b27cdf5b5630fd5b1cd743801fd7da0b34514ef75a87cff
+  openspliceai-zebrafish-400nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-zebrafish/400nt/model_400nt_rs10.pt
+    sha256: f9b85b6d8be60328c619d52bb837cdffc12bfb023151990c54dd396f2018098d
+  openspliceai-zebrafish-2000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-zebrafish/2000nt/model_2000nt_rs10.pt
+    sha256: ee6059eb1d05060de13d418573dd016aea917a42962c5df4c11e72b4668cacd2
+  openspliceai-zebrafish-10000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-zebrafish/10000nt/model_10000nt_rs10.pt
+    sha256: f98c8c372156db888a0ea3262ffde513e69eb4eec762ec62aae1bb06818293b0
+  openspliceai-honeybee-80nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-honeybee/80nt/model_80nt_rs10.pt
+    sha256: d39c6a37dc394c9176ea8fbe8d6f5bd7db18294021d43a61472fd8829f47a01c
+  openspliceai-honeybee-400nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-honeybee/400nt/model_400nt_rs10.pt
+    sha256: 5e57ab2e1ff02eca724641ddbf9fc9dfc5e16c0bc673d99adc4ee5319c929675
+  openspliceai-honeybee-2000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-honeybee/2000nt/model_2000nt_rs10.pt
+    sha256: 71fe3c9c6efb1cac5e6fe0278439e59071518261de7321e93ad80f5200e1b0e5
+  openspliceai-honeybee-10000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-honeybee/10000nt/model_10000nt_rs10.pt
+    sha256: 49a9535d7e5c29f58755839e0227f0a8d79110b54c2bf70a162c441367e430a3
+  openspliceai-arabidopsis-80nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-arabidopsis/80nt/model_80nt_rs10.pt
+    sha256: f0d1141eb016fe0092e1ae2dbfcc847a5f1ae4a4e582eb395cd3f89a2a0e24bd
+  openspliceai-arabidopsis-400nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-arabidopsis/400nt/model_400nt_rs10.pt
+    sha256: c03699a5d96c03a19167132f39da61b18afa677b23b84c540051adbac086f4b4
+  openspliceai-arabidopsis-2000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-arabidopsis/2000nt/model_2000nt_rs10.pt
+    sha256: 68b284bb3bc9631b330cc71ca8316771544b1d0a9f286a0eaed84a577d33193c
+  openspliceai-arabidopsis-10000nt:
+    source: https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-arabidopsis/10000nt/model_10000nt_rs10.pt
+    sha256: 64e3611e51b6b4d7d88f7e06d65270b904aae6455267dd5a745a788996f50c3d
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

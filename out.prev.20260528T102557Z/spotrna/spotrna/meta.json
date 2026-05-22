@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForRnaSecondaryStructurePrediction",
+  "case": "spotrna",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "spotrna",
+  "outputs": [
+    "contact_map"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "e9e897e869f045c6d7c03b9b1f70cc3fb10524d03dc8b04633c562121c8f07fb",
+    "checkpoint_source": "https://www.dropbox.com/s/dsrcf460nbjqpxa/SPOT-RNA-models.tar.gz?dl=1",
+    "commit": "dfd027727b3890d2a80aee189b2a48ca27063163",
+    "repository": "https://github.com/jaswindersingh2/SPOT-RNA"
+  },
+  "version": 1
+}

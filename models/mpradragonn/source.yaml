@@ -1,0 +1,15 @@
+model: mpradragonn
+upstream:
+  repository: https://github.com/kundajelab/MPRA-DragoNN
+  commit: 9d977d7e67f1c7bcfab5a8ef777fbd720a6ec3ea
+checkpoints:
+  mpradragonn:
+    source: https://raw.githubusercontent.com/kundajelab/MPRA-DragoNN/9d977d7e67f1c7bcfab5a8ef777fbd720a6ec3ea/kipoi/ConvModel/pretrained.hdf5
+    sha256: 27eb5aee40317b012a17a6a409f545825292eb1787c2ad506d6d37b97990f006
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - mpradragonn

@@ -1,0 +1,16 @@
+model: ablang
+upstream:
+  repository: https://github.com/oxpig/AbLang
+  commit: 8f901e99fd0ec6cedf12204f89b1de2cc76edbd4
+checkpoints:
+  ablang-heavy:
+    source: https://opig.stats.ox.ac.uk/data/downloads/ablang-heavy.tar.gz
+    sha256: 7c939d690cadbd2464901f80f58bf7018a6cd2b7edd73ff2ba6eb29f97ffa4f7
+  ablang-light:
+    source: https://opig.stats.ox.ac.uk/data/downloads/ablang-light.tar.gz
+    sha256: b5310bc75903feb781ef88adf3003f0f65595755755afa56b81c41a957c50cc9
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

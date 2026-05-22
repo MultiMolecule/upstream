@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForTokenPrediction",
+  "case": "openspliceai-arabidopsis-10000nt",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 400,
+      "name": "splice_400bp",
+      "pad": "N",
+      "requested_end": 23355191,
+      "requested_start": 23354791,
+      "right_pad": 0,
+      "source_end": 23355191,
+      "source_start": 23354791
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "82a955089a177bed0c49c6fc6c2173b5cc95e3d8ccbcfe37ecd3c879a6563d4f",
+    "type": "corpus_crop"
+  },
+  "model": "openspliceai",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05
+  },
+  "upstream": {
+    "checkpoint_sha256": "64e3611e51b6b4d7d88f7e06d65270b904aae6455267dd5a745a788996f50c3d",
+    "checkpoint_source": "https://github.com/Kuanhao-Chao/OpenSpliceAI/blob/8f70d22bee10326630c397d2c7a9ff61f166f9cf/models/openspliceai-arabidopsis/10000nt/model_10000nt_rs10.pt",
+    "commit": "8f70d22bee10326630c397d2c7a9ff61f166f9cf",
+    "repository": "https://github.com/Kuanhao-Chao/OpenSpliceAI"
+  },
+  "version": 1
+}

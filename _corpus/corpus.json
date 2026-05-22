@@ -36,14 +36,88 @@
       },
       "recommended_crops": [
         {
+          "name": "splice5_9bp",
+          "center": "center",
+          "length": 9,
+          "intended_for": [
+            "maxentscan-score5"
+          ]
+        },
+        {
+          "name": "splice3_23bp",
+          "center": "center",
+          "length": 23,
+          "intended_for": [
+            "maxentscan-score3"
+          ]
+        },
+        {
+          "name": "regulatory_145bp",
+          "center": "center",
+          "length": 145,
+          "intended_for": [
+            "mpradragonn"
+          ]
+        },
+        {
+          "name": "hal_160bp",
+          "center": "center",
+          "length": 160,
+          "intended_for": [
+            "hal"
+          ]
+        },
+        {
+          "name": "polyadenylation_205bp",
+          "center": "center",
+          "length": 205,
+          "intended_for": [
+            "aparent",
+            "aparent2"
+          ]
+        },
+        {
+          "name": "regulatory_249bp",
+          "center": "center",
+          "length": 249,
+          "intended_for": [
+            "deepstarr"
+          ]
+        },
+        {
+          "name": "coding_dna_384bp",
+          "start": 23904713,
+          "length": 384,
+          "intended_for": [
+            "calm"
+          ]
+        },
+        {
+          "name": "splice_400bp",
+          "center": "center",
+          "length": 400,
+          "intended_for": [
+            "dnabert",
+            "openspliceai"
+          ]
+        },
+        {
+          "name": "regulatory_500bp",
+          "center": "center",
+          "length": 500,
+          "intended_for": [
+            "deepmel"
+          ]
+        },
+        {
           "name": "regulatory_600bp",
           "center": "center",
           "length": 600,
           "intended_for": [
             "a2zchromatin",
             "basset",
-            "deepsea",
-            "deepstarr",
+            "dnabert2",
+            "dnaberts",
             "malinois"
           ]
         },
@@ -52,7 +126,24 @@
           "center": "center",
           "length": 1000,
           "intended_for": [
-            "bpnet"
+            "bpnet",
+            "deepsea"
+          ]
+        },
+        {
+          "name": "deepcpgdna_1001bp",
+          "center": "center",
+          "length": 1001,
+          "intended_for": [
+            "deepcpgdna"
+          ]
+        },
+        {
+          "name": "genome_1024bp",
+          "center": "center",
+          "length": 1024,
+          "intended_for": [
+            "hyenadna"
           ]
         },
         {
@@ -89,9 +180,9 @@
           ]
         },
         {
-          "name": "coverage_393216bp",
+          "name": "coverage_196608bp",
           "center": "center",
-          "length": 393216,
+          "length": 196608,
           "intended_for": [
             "enformer"
           ]
@@ -110,7 +201,6 @@
           "length": 1000000,
           "intended_for": [
             "evo2",
-            "hyenadna",
             "long_context_dna"
           ]
         },
@@ -139,25 +229,10 @@
           ]
         },
         {
-          "name": "splice_400bp",
-          "center": "center",
-          "length": 400,
-          "intended_for": [
-            "maxentscan",
-            "mmsplice",
-            "mtsplice",
-            "openspliceai",
-            "pangolin",
-            "sptransformer"
-          ]
-        },
-        {
           "name": "splice_10000bp",
           "center": "center",
           "length": 10000,
-          "intended_for": [
-            "pangolin"
-          ]
+          "intended_for": []
         }
       ]
     },
@@ -183,8 +258,19 @@
           "center": "center",
           "length": 50,
           "intended_for": [
+            "bpfold",
+            "framepool",
             "optimus5prime",
-            "optmrl"
+            "optmrl",
+            "ribonanzanet",
+            "rinalmo",
+            "rnabert",
+            "rnaernie",
+            "rnafm",
+            "rnamsm",
+            "spotrna",
+            "ufold",
+            "utrlm-te_el"
           ]
         },
         {
@@ -198,11 +284,20 @@
           ]
         },
         {
+          "name": "splicebert_510nt",
+          "center": "center",
+          "length": 510,
+          "intended_for": [
+            "splicebert"
+          ]
+        },
+        {
           "name": "rna_512nt",
           "center": "center",
           "length": 512,
           "intended_for": [
-            "rna_language_model"
+            "rna_language_model",
+            "utrbert"
           ]
         }
       ]
@@ -232,6 +327,8 @@
           "center": "center",
           "length": 128,
           "intended_for": [
+            "amplify",
+            "progen2",
             "protein_language_model"
           ]
         },
@@ -268,20 +365,24 @@
           "center": "variant",
           "length": 400,
           "intended_for": [
-            "deepsea",
-            "hal",
             "mmsplice",
-            "mtsplice",
-            "pangolin"
+            "pangolin",
+            "sptransformer"
           ]
         },
         {
-          "name": "variant_393216bp",
+          "name": "variant_800bp",
           "center": "variant",
-          "length": 393216,
+          "length": 800,
           "intended_for": [
-            "enformer"
+            "mtsplice"
           ]
+        },
+        {
+          "name": "variant_196608bp",
+          "center": "variant",
+          "length": 196608,
+          "intended_for": []
         }
       ]
     }

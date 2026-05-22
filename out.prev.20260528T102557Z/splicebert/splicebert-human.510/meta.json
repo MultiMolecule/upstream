@@ -1,0 +1,37 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "splicebert-human.510",
+  "inputs_source": {
+    "id": "splicebert/splicebert-human.510/checkpoint_probe",
+    "type": "synthetic_token_probe"
+  },
+  "model": "splicebert",
+  "outputs": [
+    "hidden_states",
+    "logits",
+    "vocab_embeddings"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "7d9e7b6d53f2e42efbd19de2ad01c195244c138bff1e4468334294e3a62cae90",
+    "checkpoint_source": "zenodo://10.5281/zenodo.7995778/models.tar.gz#models/SpliceBERT-human.510nt/pytorch_model.bin",
+    "commit": "dc1d8781f6f167c70421c3f8b809772637031d98",
+    "repository": "https://github.com/chenkenbio/SpliceBERT",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "version": 1
+}

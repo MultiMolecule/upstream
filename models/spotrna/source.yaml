@@ -1,0 +1,15 @@
+model: spotrna
+upstream:
+  repository: https://github.com/jaswindersingh2/SPOT-RNA
+  commit: dfd027727b3890d2a80aee189b2a48ca27063163
+checkpoints:
+  spotrna:
+    source: https://www.dropbox.com/s/dsrcf460nbjqpxa/SPOT-RNA-models.tar.gz?dl=1
+    sha256: e9e897e869f045c6d7c03b9b1f70cc3fb10524d03dc8b04633c562121c8f07fb
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

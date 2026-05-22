@@ -1,0 +1,15 @@
+model: deepmel
+upstream:
+  repository: https://github.com/aertslab/DeepMEL
+  commit: f329c3c90ea66185b86d0b5a274c5cfb91a8e363
+checkpoints:
+  deepmel:
+    source: https://zenodo.org/records/3592129/files/DeepMEL.hdf5?download=1
+    sha256: 06eaf3474f382bfd5d269b70e223eae1ab41ab4ff2bb0d3fe69f00df81add1b7
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - deepmel

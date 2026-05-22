@@ -1,0 +1,15 @@
+model: deepsea
+upstream:
+  repository: https://deepsea.princeton.edu/
+  commit: deepsea_train.v0.9
+checkpoints:
+  deepsea:
+    source: https://deepsea.princeton.edu/media/code/deepsea.v0.94b.tar.gz::DeepSEA-v0.94b/deepsea.cpu
+    sha256: 2af6abe4f422839c56ddbb9f9b14771a62ec49378903035c4212acdd1a370129
+docker:
+  image: ghcr.io/multimolecule/torch7
+  dockerfile: ../../docker/torch7.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - deepsea

@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "optmrl",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "optmrl",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "228ded24d38a2ccd55fbfbebfa2ab1095277bc774228a4a871b1556ba0b931a0",
+    "checkpoint_source": "https://zenodo.org/records/11258762/files/OptMRL-weights.h5",
+    "commit": "7bbd3772cbe78b2bdca389d4eeee098b90bbd238",
+    "repository": "https://github.com/ohlerlab/mlcis"
+  },
+  "version": 1
+}

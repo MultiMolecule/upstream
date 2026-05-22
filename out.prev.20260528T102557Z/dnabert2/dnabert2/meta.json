@@ -1,0 +1,24 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "dnabert2",
+  "inputs_source": {
+    "id": "dnabert2/dnabert2/synthetic_bpe_probe",
+    "type": "synthetic_token_probe"
+  },
+  "model": "dnabert2",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "7ff39ec77a484dd01070a41bfd6e95cdd7247bec80fe357ab43a4be33687aeba",
+    "checkpoint_source": "huggingface://zhihan1996/DNABERT-2-117M@7bce263b15377fc15361f52cfab88f8b586abda0/pytorch_model.bin",
+    "commit": "7bce263b15377fc15361f52cfab88f8b586abda0",
+    "repository": "https://huggingface.co/zhihan1996/DNABERT-2-117M"
+  },
+  "version": 1
+}

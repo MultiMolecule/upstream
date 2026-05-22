@@ -1,0 +1,68 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "amplify-120m",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 105,
+      "left_pad": 0,
+      "length": 128,
+      "name": "protein_128aa",
+      "pad": "X",
+      "requested_end": 169,
+      "requested_start": 41,
+      "right_pad": 0,
+      "source_end": 169,
+      "source_start": 41
+    },
+    "id": "protein/grch38_chr21_orf",
+    "record_id": "grch38_chr21_orf",
+    "sha256": "58292f75df68583d4e7535c178a96b87f532d226d6d7b57673f0a8fd35990033",
+    "type": "corpus_crop"
+  },
+  "model": "amplify",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.005,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "a2375f1f54cbe00bdbe27eedcd039c92d12f165720c0349bc582a6eb42c099ce",
+    "checkpoint_source": "huggingface://chandar-lab/AMPLIFY_120M@d918a9e8c64dc43f6ec4996022c3deba14d66470/model.safetensors",
+    "commit": "7fb657a6bd411e0d51517ccde7cc35391c072b65",
+    "repository": "https://github.com/chandar-lab/AMPLIFY",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      28,
+      32
+    ]
+  },
+  "version": 1
+}

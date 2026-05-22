@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "aparent2",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 205,
+      "name": "polyadenylation_205bp",
+      "pad": "N",
+      "requested_end": 23355094,
+      "requested_start": 23354889,
+      "right_pad": 0,
+      "source_end": 23355094,
+      "source_start": 23354889
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "a9eee74a7ba814f602c7a3278dbd06ee9c020d395086bf4b6a0ded0d848481ba",
+    "type": "corpus_crop"
+  },
+  "model": "aparent2",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "0435e4a3388941cf5e1e80ee99855f55d98ff0f8a7d071f289eb26750401ccf3",
+    "checkpoint_source": "https://raw.githubusercontent.com/johli/aparent-resnet/a745736a4d9fbe411d1869200f2596a02f875532/saved_models/aparent_all_libs_resnet_no_clinvar_wt_ep_5_var_batch_size_inference_mode.h5",
+    "commit": "a745736a4d9fbe411d1869200f2596a02f875532",
+    "repository": "https://github.com/johli/aparent-resnet"
+  },
+  "version": 1
+}

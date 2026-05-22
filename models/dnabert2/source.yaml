@@ -1,0 +1,14 @@
+model: dnabert2
+upstream:
+  repository: https://huggingface.co/zhihan1996/DNABERT-2-117M
+  commit: 7bce263b15377fc15361f52cfab88f8b586abda0
+checkpoints:
+  dnabert2:
+    source: huggingface://zhihan1996/DNABERT-2-117M@7bce263b15377fc15361f52cfab88f8b586abda0/pytorch_model.bin
+    sha256: 7ff39ec77a484dd01070a41bfd6e95cdd7247bec80fe357ab43a4be33687aeba
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments: []

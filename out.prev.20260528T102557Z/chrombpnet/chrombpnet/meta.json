@@ -1,0 +1,39 @@
+{
+  "auto_model": "AutoModelForProfilePrediction",
+  "case": "chrombpnet",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 2114,
+      "name": "regulatory_2114bp",
+      "pad": "N",
+      "requested_end": 23356048,
+      "requested_start": 23353934,
+      "right_pad": 0,
+      "source_end": 23356048,
+      "source_start": 23353934
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "6a9642faa4e9f694caf6e7efbbb963245a262dcd8a9a1fedfb38dacf0dab74bd",
+    "type": "corpus_crop"
+  },
+  "model": "chrombpnet",
+  "outputs": [
+    "profile_logits",
+    "count_logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "model.chrombpnet_nobias.fold_0.ENCSR868FGK.h5=71c0e076da38467db41630939f47d5eb170b04cbf198de8988c68812860cb71b;model.bias_scaled.fold_0.ENCSR868FGK.h5=4813a75dc090e93c9a6a3f82d36bf7baf1a334ed8aea0664546cf340b92b5bb0",
+    "checkpoint_source": "https://www.encodeproject.org/files/ENCFF984RAF/@@download/ENCFF984RAF.tar.gz",
+    "commit": "1ea660fef2644b55f418e1a1f05823a0836922e5",
+    "repository": "https://github.com/kundajelab/chrombpnet"
+  },
+  "version": 1
+}

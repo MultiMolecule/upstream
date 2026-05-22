@@ -1,0 +1,53 @@
+{
+  "auto_model": "AutoModelForMaskedLM",
+  "case": "rnamsm",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "rnamsm",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "6aee49663a2959670c6080e7a3ab80e87a78dbf81e5e6b1ca7349a7849121f02",
+    "checkpoint_source": "google_drive://11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/RNA-MSM_pretrained.ckpt",
+    "commit": "faadd57559c1c146effbfd84a7628cd2042d5ede",
+    "repository": "https://github.com/yikunpku/RNA-MSM",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      22,
+      26
+    ]
+  },
+  "version": 1
+}

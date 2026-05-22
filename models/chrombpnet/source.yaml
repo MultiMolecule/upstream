@@ -1,0 +1,15 @@
+model: chrombpnet
+upstream:
+  repository: https://github.com/kundajelab/chrombpnet
+  commit: 1ea660fef2644b55f418e1a1f05823a0836922e5
+checkpoints:
+  chrombpnet:
+    source: https://www.encodeproject.org/files/ENCFF984RAF/@@download/ENCFF984RAF.tar.gz
+    sha256: model.chrombpnet_nobias.fold_0.ENCSR868FGK.h5=71c0e076da38467db41630939f47d5eb170b04cbf198de8988c68812860cb71b;model.bias_scaled.fold_0.ENCSR868FGK.h5=4813a75dc090e93c9a6a3f82d36bf7baf1a334ed8aea0664546cf340b92b5bb0
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - chrombpnet

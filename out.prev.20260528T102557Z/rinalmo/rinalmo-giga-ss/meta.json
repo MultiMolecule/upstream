@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForRnaSecondaryStructurePrediction",
+  "case": "rinalmo-giga-ss",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 50,
+      "name": "rna_50nt",
+      "pad": "N",
+      "requested_end": 23355016,
+      "requested_start": 23354966,
+      "right_pad": 0,
+      "source_end": 23355016,
+      "source_start": 23354966
+    },
+    "id": "rna/grch38_chr21_transcribed",
+    "record_id": "grch38_chr21_transcribed",
+    "sha256": "0585f46bafb80a949b23b1b9b60b4e4a57bf1f0dd8f3014b7655d856464b5a59",
+    "type": "corpus_crop"
+  },
+  "model": "rinalmo",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "44e377cb0c92f7b9cff8db8a38e33e5c0363d2f9a19831c6342346bb788a5e55",
+    "checkpoint_source": "https://zenodo.org/records/15043668/files/rinalmo_giga_ss_bprna_ft.pt",
+    "commit": "63c28a893e9c0347ec0539001ec6b1abe27d3446",
+    "repository": "https://github.com/lbcb-sci/RiNALMo"
+  },
+  "version": 1
+}

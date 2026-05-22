@@ -60,25 +60,37 @@ Use from a generator:
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
-from _corpus.load import crop_record, load_record_range
+from _corpus.load import crop_record, crop_variant_pair
 
 crop = crop_record("dna/grch38_chr21", 2114, center="center")
 fixed_length_sequence = crop["sequence"]
 
-start = 23354859
-end = 23355124
-fixed_range_sequence = load_record_range("rna/grch38_chr21_transcribed", start, end)
+rna_crop = crop_record("rna/grch38_chr21_transcribed", 265, center="center")
+rna_sequence = rna_crop["sequence"]
+
+variant_crop = crop_variant_pair(
+    "dna/grch38_chr21_synthetic_variant",
+    400,
+    center="variant",
+)
+ref_sequence = variant_crop["ref_sequence"]
+alt_sequence = variant_crop["alt_sequence"]
 ```
+
+Generators should request fixed-length model inputs through `crop_record` for
+single-sequence records or `crop_variant_pair` for paired reference/alternative
+records. For coordinate-based windows, pass `start=<0-based start>` and the
+desired crop length instead of using a separate range loader.
 
 The generator should copy the relevant corpus metadata into `meta.json`:
 
 ```json
 {
   "inputs_source": {
-    "type": "corpus",
+    "type": "corpus_crop",
     "id": "dna/grch38_chr21",
     "record_id": "grch38_chr21",
     "crop": {

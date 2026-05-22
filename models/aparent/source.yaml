@@ -1,0 +1,15 @@
+model: aparent
+upstream:
+  repository: https://github.com/johli/aparent
+  commit: 69ad29791709b48689ff5d9e3a3daefc568de9ce
+checkpoints:
+  aparent:
+    source: https://raw.githubusercontent.com/johli/aparent/69ad29791709b48689ff5d9e3a3daefc568de9ce/saved_models/aparent_large_lessdropout_all_libs_no_sampleweights.h5
+    sha256: 1bb687d390daf04b7edfe825baa4b9293fec4ed2d3fa0bd0603ba6f8df04af0e
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - aparent

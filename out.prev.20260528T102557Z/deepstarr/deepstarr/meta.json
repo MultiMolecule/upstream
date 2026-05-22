@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "deepstarr",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 249,
+      "name": "regulatory_249bp",
+      "pad": "N",
+      "requested_end": 23355116,
+      "requested_start": 23354867,
+      "right_pad": 0,
+      "source_end": 23355116,
+      "source_start": 23354867
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "cdd32148aa97dd47752f999b08a2a8e9e0baf067835c0e3284e9676a2f799939",
+    "type": "corpus_crop"
+  },
+  "model": "deepstarr",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "b1077afeb01570b4e5b79936d1f5ad6725a3499919957492d6ef0ecf8b188b46",
+    "checkpoint_source": "https://zenodo.org/records/5502060/files/DeepSTARR.model.h5?download=1",
+    "commit": "b02e460c7581934bb6c8910e53be04da10688781",
+    "repository": "https://github.com/bernardo-de-almeida/DeepSTARR"
+  },
+  "version": 1
+}

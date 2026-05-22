@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "a2zchromatin-methylation",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 600,
+      "name": "regulatory_600bp",
+      "pad": "N",
+      "requested_end": 23355291,
+      "requested_start": 23354691,
+      "right_pad": 0,
+      "source_end": 23355291,
+      "source_start": 23354691
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "975de3324aa9c4792f4af5c4ea8c561d6b59f02897f122dc7045631e19c35899",
+    "type": "corpus_crop"
+  },
+  "model": "a2zchromatin",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "1f193c08a2ae7a67e026af4a81c388a6b8a7a1570cd4149be4282b3426c3a353",
+    "checkpoint_source": "https://zenodo.org/records/5724562/files/model-methylation-full.h5?download=1",
+    "commit": "4360ccbba700737dfe4123723d71fd21466a2c02",
+    "repository": "https://github.com/twrightsman/a2z-regulatory"
+  },
+  "version": 1
+}

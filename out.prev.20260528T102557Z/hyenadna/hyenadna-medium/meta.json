@@ -1,0 +1,52 @@
+{
+  "auto_model": "AutoModelForCausalLM",
+  "case": "hyenadna-medium",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 1024,
+      "name": "genome_1024bp",
+      "pad": "N",
+      "requested_end": 23355503,
+      "requested_start": 23354479,
+      "right_pad": 0,
+      "source_end": 23355503,
+      "source_start": 23354479
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "2a75b25db4d9fef363b027b604e2c511626e0b5c162ec86f5560a8b5ce77cc51",
+    "type": "corpus_crop"
+  },
+  "model": "hyenadna",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "b7a1c9479248edf27691b189bb6657256f1705e560cadc64d6431633932cafa1",
+    "checkpoint_source": "huggingface://LongSafari/hyenadna-small-32k-seqlen-hf@8fe770c78eb13fe33bf81501612faeddf4d6f331/model.safetensors",
+    "commit": "d553021b483b82980aa4b868b37ec2d4332e198a",
+    "repository": "https://github.com/HazyResearch/hyena-dna",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "version": 1
+}

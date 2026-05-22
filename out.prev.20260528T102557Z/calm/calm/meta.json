@@ -1,0 +1,58 @@
+{
+  "auto_model": "AutoModelForPreTraining",
+  "case": "calm",
+  "inputs_source": {
+    "id": "calm/calm/standard_codon_probe",
+    "type": "synthetic_token_probe"
+  },
+  "model": "calm",
+  "outputs": [
+    "hidden_states",
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "bf536f8f19a5d3c6ebbdd53357a5e49bb0b8cc6ff7173f25ed178696e084ab11",
+    "checkpoint_source": "http://opig.stats.ox.ac.uk/data/downloads/calm_weights.pkl",
+    "commit": "24187ea44744ca548b747ad262058f3463589f8e",
+    "repository": "https://github.com/oxpig/CaLM",
+    "target_slice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      16,
+      17,
+      18,
+      31,
+      32,
+      33,
+      36,
+      37,
+      38,
+      41,
+      42,
+      43,
+      56,
+      57,
+      58,
+      61,
+      62,
+      63,
+      66,
+      67,
+      68
+    ]
+  },
+  "version": 1
+}

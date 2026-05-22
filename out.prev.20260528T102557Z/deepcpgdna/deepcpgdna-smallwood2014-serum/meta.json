@@ -1,0 +1,38 @@
+{
+  "auto_model": "AutoModelForSequencePrediction",
+  "case": "deepcpgdna-smallwood2014-serum",
+  "inputs_source": {
+    "crop": {
+      "center": "center",
+      "center_index": 23354991,
+      "left_pad": 0,
+      "length": 1001,
+      "name": "deepcpgdna_1001bp",
+      "pad": "N",
+      "requested_end": 23355492,
+      "requested_start": 23354491,
+      "right_pad": 0,
+      "source_end": 23355492,
+      "source_start": 23354491
+    },
+    "id": "dna/grch38_chr21",
+    "record_id": "grch38_chr21",
+    "sha256": "2ae9b61fb8c2917241e513152bbf1f66fc829322ba85f0d50e7fe222b3ea470d",
+    "type": "corpus_crop"
+  },
+  "model": "deepcpgdna",
+  "outputs": [
+    "logits"
+  ],
+  "tolerance": {
+    "atol": 0.0001,
+    "rtol": 0.0001
+  },
+  "upstream": {
+    "checkpoint_sha256": "bdaf0c259e4920ee62b54a384b5b60a6dae6cb50b3661039e2d3f68125db68c8",
+    "checkpoint_source": "https://zenodo.org/records/1466079/files/Smallwood2014_serum_dna-model_weights.h5?download=1",
+    "commit": "7f58da5423121168edabb27202c234df0f0e460d",
+    "repository": "https://github.com/cangermueller/deepcpg"
+  },
+  "version": 1
+}

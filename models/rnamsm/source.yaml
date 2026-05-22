@@ -1,0 +1,15 @@
+model: rnamsm
+upstream:
+  repository: https://github.com/yikunpku/RNA-MSM
+  commit: faadd57559c1c146effbfd84a7628cd2042d5ede
+checkpoints:
+  rnamsm:
+    source: google_drive://11A-S13qAb5wiBi1YLs3EOrnixSDq7Q0q/RNA-MSM_pretrained.ckpt
+    sha256: 6aee49663a2959670c6080e7a3ab80e87a78dbf81e5e6b1ca7349a7849121f02
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'
