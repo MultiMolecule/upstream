@@ -1,0 +1,24 @@
+model: carp
+upstream:
+  repository: https://github.com/microsoft/protein-sequence-models
+  commit: af695772c4a1c056d930c95ec7e6428aa042f5cd
+checkpoints:
+  carp-600k:
+    source: https://zenodo.org/record/6564798/files/carp_600k.pt?download=1
+    sha256: 787f618e90cfdd6cbe2d98ab944e89dea00e972d81019181aba14bbf31e96e1e
+  carp-38m:
+    source: https://zenodo.org/record/6564798/files/carp_38M.pt?download=1
+    sha256: b66b68bce0fd690c780032140297de8fea1f94bfa5ecd67fb408ab3a3794cc3b
+  carp-76m:
+    source: https://zenodo.org/record/6564798/files/carp_76M.pt?download=1
+    sha256: 7d224abac5eb2d5d649353352acb58efcae94277d26e25f1ac2cf90598205264
+  carp-640m:
+    source: https://zenodo.org/record/6564798/files/carp_640M.pt?download=1
+    sha256: ae1d7e0cbe713c731cfde7ace213f2a73372c31d8df543089e6b6d371228c4f7
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

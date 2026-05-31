@@ -1,0 +1,13 @@
+model: hal
+upstream:
+  repository: https://github.com/Alex-Rosenberg/cell-2015
+  commit: ca54d1117fd28375260bfde3d1b46f3d6074f306
+checkpoints:
+  hal:
+    source: https://zenodo.org/record/1466088/files/HAL_mer_scores.npz?download=1
+    sha256: 961acd13238e19168b691d714d2f70c385fc87443cb493a9a9f54927a0e7e6af
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

@@ -1,0 +1,17 @@
+model: ernierna
+upstream:
+  repository: https://github.com/Bruce-ywj/ERNIE-RNA
+  commit: 43bc06de1088ed03ffd7de918ad4b2c2a3346a43
+checkpoints:
+  ernierna:
+    source: google_drive://1CmNxJxgjDhRoBdlDODFFjDNNzJMHVzmO
+    sha256: 50ac42d4a2af361b8a7d9fb62546e3f380c32893b179554609440339a6676851
+  ernierna-ss:
+    source: google_drive://1tvoHc66uQ796mqlbKgJrl-MiRPQGylR5/ERNIE-RNA_attn-map_ss_prediction_bpRNA-1m_checkpoint.pt
+    sha256: c528cd8b4299fcb0a502093c617946596fb6e12b9db9090c5053e99c2e640653
+docker:
+  image: ghcr.io/multimolecule/fairseq
+  dockerfile: ../../docker/fairseq.Dockerfile
+generator:
+  script: '{case}/generate.py'
+  arguments: []

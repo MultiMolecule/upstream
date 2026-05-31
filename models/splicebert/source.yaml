@@ -1,0 +1,19 @@
+model: splicebert
+upstream:
+  repository: https://github.com/chenkenbio/SpliceBERT
+  commit: dc1d8781f6f167c70421c3f8b809772637031d98
+checkpoints:
+  splicebert:
+    source: zenodo://10.5281/zenodo.7995778/models.tar.gz#models/SpliceBERT.1024nt/pytorch_model.bin
+    sha256: 2ad91428c318e6c49233154073ca7a35f5f7899c9f4be3444775bae3dba0149d
+  splicebert.510:
+    source: zenodo://10.5281/zenodo.7995778/models.tar.gz#models/SpliceBERT.510nt/pytorch_model.bin
+    sha256: b3a48c768a029dc6291cde8085c0bc02d40a6d03007b0535e6788573e2ea7808
+  splicebert-human.510:
+    source: zenodo://10.5281/zenodo.7995778/models.tar.gz#models/SpliceBERT-human.510nt/pytorch_model.bin
+    sha256: 7d9e7b6d53f2e42efbd19de2ad01c195244c138bff1e4468334294e3a62cae90
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

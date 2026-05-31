@@ -1,0 +1,15 @@
+model: procapnet
+upstream:
+  repository: https://github.com/kundajelab/ProCapNet
+  commit: 5664daa8c123d143275faae7c5385c99fa76bd5a
+checkpoints:
+  procapnet:
+    source: https://www.encodeproject.org/files/ENCFF976FHE/@@download/ENCFF976FHE.tar.gz
+    sha256: bddf96b9c674c578dfcd510cc277cb5cb6ca2944d4d473ca223dd2e4b355568b
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - procapnet

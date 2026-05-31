@@ -1,0 +1,33 @@
+model: progen2
+upstream:
+  repository: https://github.com/salesforce/progen
+  commit: 485b2ea3db98f8d65d0cd86c2c85ae639b37a678
+checkpoints:
+  progen2-small:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-small.tar.gz
+    sha256: 8226a310edda873003b7ea50396d9be0195e34986b98392f79b5f782b67e3f05
+  progen2-oas:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-oas.tar.gz
+    sha256: 6a0d5cea517a15aa9e4caa31681a309a48f13efe9b423418b7751259c762d299
+  progen2-medium:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-medium.tar.gz
+    sha256: 545f4d3e0072c0f422c90e221100d0ebe756989d0f09af3ede57736680adb9e2
+  progen2-base:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-base.tar.gz
+    sha256: 393126403594e4c0d3d1a9eef06a3e92614c979af907f6aca06eb882b7c8aea8
+  progen2-bfd90:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-BFD90.tar.gz
+    sha256: 9c81810054fde79b4130e579dbd98b2b1e8e9772f1138aae497f71f5cb101a0c
+  progen2-large:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-large.tar.gz
+    sha256: ab03cb15d6ba4a02baea20648f2406f6d2aa186f68bec1b811be1222aca7a4cd
+  progen2-xlarge:
+    source: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-xlarge.tar.gz
+    sha256: 01e84cc6eec2ada7a5722adcc1a6f5c3e4baa3ccdf937446d5d02f8c99fdcda7
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

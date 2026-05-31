@@ -1,0 +1,21 @@
+model: rnafm
+upstream:
+  repository: https://github.com/ml4bio/RNA-FM
+  commit: 348951516e0963d22bbb33b3c9fc18c89081d38e
+checkpoints:
+  rnafm:
+    source: huggingface://cuhkaih/rnafm@91d4a46d28d8054a7b429955e8fc0c253ba0afd6/RNA-FM_pretrained.pth
+    sha256: 5b5d7d87b37c291ef42c140ef9edf7aea29f255fa2a4fd435f776c52e93d5e99
+  rnafm-mrna:
+    source: huggingface://cuhkaih/rnafm@91d4a46d28d8054a7b429955e8fc0c253ba0afd6/mRNA-FM_pretrained.pth
+    sha256: 413324520d35f00bf5419a85033b18e11eb57bc1356a752660f8d75d3ef7624f
+  rnafm-ss:
+    source: huggingface://cuhkaih/rnafm@91d4a46d28d8054a7b429955e8fc0c253ba0afd6/SS/RNA-FM-ResNet_bpRNA.pth
+    sha256: 4ba2cde6b6ad75fb1c742cd5a7f40d4d0d4bcd63a329ff98347776e7f84630e6
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

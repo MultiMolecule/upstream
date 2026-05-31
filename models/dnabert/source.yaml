@@ -1,0 +1,22 @@
+model: dnabert
+upstream:
+  repository: https://github.com/jerryji1993/DNABERT
+  commit: b6da04ec9a7d4e53efe5b33a6ce1a21c0e7ac413
+checkpoints:
+  dnabert-6mer:
+    source: huggingface://zhihan1996/DNA_bert_6@c56e67ea5827e0ddc67ef059addcf71569b1216e/pytorch_model.bin
+    sha256: e1688c3a3f881daff02a42b487e04612c4ec9ef33f1f02fa5f4e67d7b9865ca9
+  dnabert-3mer:
+    source: huggingface://zhihan1996/DNA_bert_3@6531a531c2fba495bc9bf4ec6518f99ed0032fb1/pytorch_model.bin
+    sha256: 8b20083ff1a993e022a89c09c2f7047102472fe5232c3815ee50b0b0359032ba
+  dnabert-5mer:
+    source: huggingface://zhihan1996/DNA_bert_5@4c35c45a815a80e02fd44b9dcd69d32bcef90d5e/pytorch_model.bin
+    sha256: 232c27b78c04f9770973a018ad753d9ad182947b6b6194c4844da80e60f39de1
+  dnabert-4mer:
+    source: huggingface://zhihan1996/DNA_bert_4@1a4946417c1e08e588616bf9c8f999a543bb2c8b/pytorch_model.bin
+    sha256: c2914d5fe6ab35d7981d92f4eb9382e87d7caf20d0573651cdf82d5b0daf2d00
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

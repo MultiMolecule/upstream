@@ -1,0 +1,16 @@
+model: maxentscan
+upstream:
+  repository: https://github.com/kepbod/maxentpy
+  commit: 60b4fed4a169cc25264d83a7d50db6ba304c2104
+checkpoints:
+  maxentscan-score5:
+    source: upstream-file://maxentpy/data/score5_matrix.txt
+    sha256: c64fa6aea3d8b71d6af69f5e3ece8f84de06f5450f6d4ba482fbbff6afcf8b5b
+  maxentscan-score3:
+    source: upstream-file://maxentpy/data/score3_matrix.txt
+    sha256: 9e8a74dc795ae5c9c5b611d4343a1a5a70fff863956f4e00ae23a85f21beb3ae
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

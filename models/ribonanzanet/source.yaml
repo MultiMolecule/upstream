@@ -1,0 +1,24 @@
+model: ribonanzanet
+upstream:
+  repository: https://github.com/Shujun-He/RibonanzaNet
+  commit: dbf0fd5862e15e4d4f1bd72a082b2d94cfb2d706
+checkpoints:
+  ribonanzanet:
+    source: kaggle://datasets/shujun717/ribonanzanet-weights/RibonanzaNet.pt
+    sha256: c2aa45c14367863ece52d528d6c353ef40b66f7cb41539c19a042e87c7d3f215
+  ribonanzanet-ss:
+    source: kaggle://datasets/shujun717/ribonanzanet-weights/RibonanzaNet-SS.pt
+    sha256: 626060952368affbf61b78b532d6166387094754b68bc0553da376f2d2b00d56
+  ribonanzanet-drop:
+    source: kaggle://datasets/shujun717/ribonanzanet-weights/RibonanzaNet-Drop.pt
+    sha256: 8e423126b5686a48499d0a22d8b234e01092b757fe773ed4e6519dd8c1cf0bdb
+  ribonanzanet-deg:
+    source: kaggle://datasets/shujun717/ribonanzanet-weights/RibonanzaNet-Deg.pt
+    sha256: 8df072e9992cdff546f831095d8e518f7ba2421cbde371b0dad45a9f1476af37
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - '{case}'

@@ -1,0 +1,13 @@
+model: pangolin
+upstream:
+  repository: https://github.com/tkzeng/Pangolin
+  commit: 5cf94b8db938c658391b4305cd7ce33297d44ff7
+checkpoints:
+  pangolin:
+    source: upstream-file://pangolin/models/final.{1,2,3}.{0,2,4,6}.3.v2
+    sha256: 288ccd001fa92a83e3a4ff43b482393b3794fe20cdcbf191889a18280ebd1ca3
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py

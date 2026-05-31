@@ -1,0 +1,15 @@
+model: ablang2
+upstream:
+  repository: https://github.com/oxpig/AbLang2
+  commit: 586af3083c32b5fb2f0a1c855f2ad4f1cad15ec3
+checkpoints:
+  ablang2:
+    source: https://zenodo.org/records/10185169/files/ablang2-weights.tar.gz?download=1
+    sha256: 7acb23b880e3b69b3fea8b7d6cacac0fda147daafd99edc411e0ff5c61252ac5
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
+  arguments:
+    - ablang2

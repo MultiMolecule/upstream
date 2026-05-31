@@ -1,0 +1,13 @@
+model: optmrl
+upstream:
+  repository: https://github.com/ohlerlab/mlcis
+  commit: 7bbd3772cbe78b2bdca389d4eeee098b90bbd238
+checkpoints:
+  optmrl:
+    source: https://zenodo.org/records/11258762/files/OptMRL-weights.h5
+    sha256: 228ded24d38a2ccd55fbfbebfa2ab1095277bc774228a4a871b1556ba0b931a0
+docker:
+  image: ghcr.io/multimolecule/tensorflow2
+  dockerfile: ../../docker/tensorflow2.Dockerfile
+generator:
+  script: generate.py

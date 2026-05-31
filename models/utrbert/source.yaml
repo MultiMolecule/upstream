@@ -1,0 +1,22 @@
+model: utrbert
+upstream:
+  repository: https://github.com/yangyn533/3UTRBERT
+  commit: 03a6fd5f7331141daf8cbc5f177491dbba90bc42
+checkpoints:
+  utrbert-6mer:
+    source: figshare://10.6084/m9.figshare.22851272.v1/6-new-12w-0.zip#6-new-12w-0/pytorch_model.bin
+    sha256: e9f04fcdd2f7d6be8e64dc04c03c50bd278e3283ff49de0c95a663c9a8156faf
+  utrbert-5mer:
+    source: figshare://10.6084/m9.figshare.22851191.v1/5-new-12w-0.zip#5-new-12w-0/pytorch_model.bin
+    sha256: ecda095cd77a892ab4f3599b8624d22a20b61c93663eaad0c81c5be3e2be2e0f
+  utrbert-4mer:
+    source: figshare://10.6084/m9.figshare.22851119.v1/4-new-12w-0.zip#4-new-12w-0/pytorch_model.bin
+    sha256: 8435c59bfc32a426da0da2e728de085d3eb74be5c49b4bd51848c9aee5d54d43
+  utrbert-3mer:
+    source: figshare://10.6084/m9.figshare.22847354.v1/3-new-12w-0.zip#3-new-12w-0/pytorch_model.bin
+    sha256: 7aca71823ab74771006be1030d9e7239220bba40a16858575929a02e6d2a7471
+docker:
+  image: ghcr.io/multimolecule/pytorch2
+  dockerfile: ../../docker/pytorch2.Dockerfile
+generator:
+  script: generate.py
